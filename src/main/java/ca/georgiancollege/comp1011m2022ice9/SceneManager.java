@@ -29,7 +29,7 @@ public class SceneManager
      * @param event
      * @param FXMLFileName
      */
-    public void changeScene(ActionEvent event, String FXMLFileName) throws IOException
+    public void changeScene(ActionEvent event, String FXMLFileName, Movie m) throws IOException
     {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(FXMLFileName));
         Scene scene = new Scene(fxmlLoader.load());
@@ -37,6 +37,7 @@ public class SceneManager
         // derive the stage (window) from the action event (button press)
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);
+        stage.setUserData(m);
         stage.show();
     }
 }

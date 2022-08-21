@@ -1,22 +1,17 @@
-.labels
-{
-    -fx-font-size: 40px;
-    -fx-font-family: "Arial Black";
+.root{
+    -fx-background-color: #607D8B;
+    -fx-font-family: Gabriola;
+}
+#listview{
+    -fx-background-color: #ff7f50;
+    -fx-font-family: Gabriola;
 }
 
-.table-column
-{
-    -fx-alignment: CENTER;
+#details{
+    -fx-background-color: #7fffd4;
+    -fx-font-family: Gabriola;
 }
 
-.grid-pane-border
-{
-    -fx-border-style: none none solid none;
-    -fx-border-color: black;
-}
-
-.hbox-top-border
-{
-    -fx-border-style: solid none none none;
-    -fx-border-color: black;
+#image{
+    -fx-background-color: #8fbc8f;
 }

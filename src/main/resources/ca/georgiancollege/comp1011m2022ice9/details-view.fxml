@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="ca.georgiancollege.comp1011m2022ice9.DetailsViewController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@app.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.georgiancollege.comp1011m2022ice9.DetailsViewController">
+   <children>
+      <BorderPane layoutX="-2.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox prefHeight="69.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="labelTitle" alignment="CENTER" contentDisplay="CENTER" prefHeight="68.0" prefWidth="493.0" textAlignment="CENTER" />
+                  <Button id="details" mnemonicParsing="false" onAction="#LoadDetails" prefHeight="69.0" prefWidth="111.0" text="Load Details" />
+               </children>
+            </HBox>
+         </top>
+         <right>
+            <ImageView id="image" fx:id="imageView" fitHeight="173.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <TextArea id="details" fx:id="taPlot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="157.0" prefWidth="601.0" BorderPane.alignment="CENTER_LEFT" />
+         </bottom>
+         <center>
+            <TextArea id="details" fx:id="taActors" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="174.0" prefWidth="201.0" BorderPane.alignment="CENTER_RIGHT" />
+         </center>
+         <left>
+            <TextArea id="image" fx:id="taDetails" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </children>
 </AnchorPane>

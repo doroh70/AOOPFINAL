@@ -86,7 +86,7 @@ public class APIManager
 
     public Movie getMovieFromOMDBByID(String imdbID)
     {
-        String APIKey = "769bf72f";
+        String APIKey = "b6ab4ae6";
         String URL = "https://www.omdbapi.com/?apikey=" + APIKey + "&i=" + imdbID;
 
         HttpClient client = HttpClient.newHttpClient();
